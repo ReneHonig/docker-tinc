@@ -2,7 +2,7 @@ FROM tiredofit/alpine:3.13
 LABEL maintainer="Dave Conroy (dave at tiredofit dot ca)"
 
 ### Environment Variables
-ENV TINC_VERSION=1.1pre17 \
+ENV TINC_VERSION=1.1pre18 \
 	ENABLE_SMTP=false
 
 ### Dependencies Installation
@@ -18,7 +18,7 @@ RUN set -x && \
 						gcc \
 						libc-utils \
 						libpcap-dev \
-						libressl \
+						#libressl \
 						linux-headers \
 						lzo-dev \
 						make \
